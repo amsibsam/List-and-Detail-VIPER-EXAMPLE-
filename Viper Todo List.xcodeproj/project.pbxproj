@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64B74F4447DE6C91B6127343 /* Pods_Viper_Todo_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D2AAE880B6CB643F817CFF /* Pods_Viper_Todo_List.framework */; };
+		8E05E8DC211D749B00CC4378 /* HUDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E8DB211D749B00CC4378 /* HUDHelper.swift */; };
+		8E05E8E0211D78B300CC4378 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E8DE211D78B300CC4378 /* FruitCell.swift */; };
+		8E05E8E1211D78B300CC4378 /* FruitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E05E8DF211D78B300CC4378 /* FruitCell.xib */; };
+		8E05E8E3211D797600CC4378 /* UIView+Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E8E2211D797600CC4378 /* UIView+Inspectable.swift */; };
+		8E05E8E5211D7E6E00CC4378 /* AFImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E05E8E4211D7E6E00CC4378 /* AFImageHelper.swift */; };
+		8E07F4EC211C2B2E00166EB3 /* FruitInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F4E6211C2B2E00166EB3 /* FruitInteractor.swift */; };
+		8E07F4ED211C2B2E00166EB3 /* FruitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F4E7211C2B2E00166EB3 /* FruitPresenter.swift */; };
+		8E07F4EE211C2B2E00166EB3 /* FruitProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F4E8211C2B2E00166EB3 /* FruitProtocols.swift */; };
+		8E07F4EF211C2B2E00166EB3 /* FruitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F4E9211C2B2E00166EB3 /* FruitRouter.swift */; };
+		8E07F4F0211C2B2E00166EB3 /* FruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F4EA211C2B2E00166EB3 /* FruitViewController.swift */; };
+		8E07F4F1211C2B2E00166EB3 /* FruitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E07F4EB211C2B2E00166EB3 /* FruitViewController.xib */; };
+		8E07F4F5211C301D00166EB3 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F4F4211C301D00166EB3 /* Fruit.swift */; };
+		8E07F4F8211C33EE00166EB3 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F4F7211C33EE00166EB3 /* BaseProtocol.swift */; };
+		8E460B7F211D5F3700225C3E /* FruitListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E460B79211D5F3700225C3E /* FruitListInteractor.swift */; };
+		8E460B80211D5F3700225C3E /* FruitListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E460B7A211D5F3700225C3E /* FruitListPresenter.swift */; };
+		8E460B81211D5F3700225C3E /* FruitListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E460B7B211D5F3700225C3E /* FruitListProtocols.swift */; };
+		8E460B82211D5F3700225C3E /* FruitListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E460B7C211D5F3700225C3E /* FruitListRouter.swift */; };
+		8E460B83211D5F3700225C3E /* FruitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E460B7D211D5F3700225C3E /* FruitListViewController.swift */; };
+		8E460B84211D5F3700225C3E /* FruitListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E460B7E211D5F3700225C3E /* FruitListViewController.xib */; };
+		8E460B86211D669A00225C3E /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E460B85211D669A00225C3E /* LocalDataManager.swift */; };
+		8EAC77FA211BF525004EBADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC77F9211BF525004EBADA /* AppDelegate.swift */; };
+		8EAC77FC211BF525004EBADA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC77FB211BF525004EBADA /* ViewController.swift */; };
+		8EAC77FF211BF525004EBADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAC77FD211BF525004EBADA /* Main.storyboard */; };
+		8EAC7802211BF525004EBADA /* Viper_Todo_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC7800211BF525004EBADA /* Viper_Todo_List.xcdatamodeld */; };
+		8EAC7804211BF52C004EBADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EAC7803211BF52C004EBADA /* Assets.xcassets */; };
+		8EAC7807211BF52C004EBADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAC7805211BF52C004EBADA /* LaunchScreen.storyboard */; };
+		8EAC7812211BF52C004EBADA /* Viper_Todo_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC7811211BF52C004EBADA /* Viper_Todo_ListTests.swift */; };
+		8EAC781D211BF659004EBADA /* AppStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC781C211BF659004EBADA /* AppStoryBoard.swift */; };
+		8EAC7821211BF757004EBADA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EAC7820211BF757004EBADA /* Home.storyboard */; };
+		8EAC7825211C093F004EBADA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC7824211C093F004EBADA /* LoginViewController.swift */; };
+		8EAC7827211C0980004EBADA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC7826211C0980004EBADA /* RegisterViewController.swift */; };
+		8EAC782A211C1258004EBADA /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC7829211C1258004EBADA /* CacheManager.swift */; };
+		8EAC782D211C14A7004EBADA /* AppDelegate+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC782C211C14A7004EBADA /* AppDelegate+Navigation.swift */; };
+		8EAC7830211C1669004EBADA /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC782F211C1669004EBADA /* Switcher.swift */; };
+		8EAC7832211C1961004EBADA /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC7831211C1961004EBADA /* AlertUtil.swift */; };
+		8EAC7834211C1CE2004EBADA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAC7833211C1CE2004EBADA /* HomeViewController.swift */; };
+		BD5203F71B7E9E142F744B43 /* Pods_Viper_Todo_ListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9331D0FC00C42B287CC7B9 /* Pods_Viper_Todo_ListTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EAC780E211BF52C004EBADA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EAC77EE211BF525004EBADA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EAC77F5211BF525004EBADA;
+			remoteInfo = "Viper Todo List";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A9331D0FC00C42B287CC7B9 /* Pods_Viper_Todo_ListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_Todo_ListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87FCFD2171234BF495F242F3 /* Pods-Viper Todo List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper Todo List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viper Todo List/Pods-Viper Todo List.debug.xcconfig"; sourceTree = "<group>"; };
+		8E05E8DB211D749B00CC4378 /* HUDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDHelper.swift; sourceTree = "<group>"; };
+		8E05E8DE211D78B300CC4378 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		8E05E8DF211D78B300CC4378 /* FruitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitCell.xib; sourceTree = "<group>"; };
+		8E05E8E2211D797600CC4378 /* UIView+Inspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Inspectable.swift"; sourceTree = "<group>"; };
+		8E05E8E4211D7E6E00CC4378 /* AFImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFImageHelper.swift; sourceTree = "<group>"; };
+		8E07F4E6211C2B2E00166EB3 /* FruitInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitInteractor.swift; sourceTree = "<group>"; };
+		8E07F4E7211C2B2E00166EB3 /* FruitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitPresenter.swift; sourceTree = "<group>"; };
+		8E07F4E8211C2B2E00166EB3 /* FruitProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitProtocols.swift; sourceTree = "<group>"; };
+		8E07F4E9211C2B2E00166EB3 /* FruitRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRouter.swift; sourceTree = "<group>"; };
+		8E07F4EA211C2B2E00166EB3 /* FruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewController.swift; sourceTree = "<group>"; };
+		8E07F4EB211C2B2E00166EB3 /* FruitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitViewController.xib; sourceTree = "<group>"; };
+		8E07F4F4211C301D00166EB3 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		8E07F4F7211C33EE00166EB3 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		8E460B79211D5F3700225C3E /* FruitListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListInteractor.swift; sourceTree = "<group>"; };
+		8E460B7A211D5F3700225C3E /* FruitListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListPresenter.swift; sourceTree = "<group>"; };
+		8E460B7B211D5F3700225C3E /* FruitListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListProtocols.swift; sourceTree = "<group>"; };
+		8E460B7C211D5F3700225C3E /* FruitListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListRouter.swift; sourceTree = "<group>"; };
+		8E460B7D211D5F3700225C3E /* FruitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListViewController.swift; sourceTree = "<group>"; };
+		8E460B7E211D5F3700225C3E /* FruitListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitListViewController.xib; sourceTree = "<group>"; };
+		8E460B85211D669A00225C3E /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		8EAC77F6211BF525004EBADA /* Viper Todo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper Todo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAC77F9211BF525004EBADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EAC77FB211BF525004EBADA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EAC77FE211BF525004EBADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EAC7801211BF525004EBADA /* Viper_Todo_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Viper_Todo_List.xcdatamodel; sourceTree = "<group>"; };
+		8EAC7803211BF52C004EBADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EAC7806211BF52C004EBADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EAC7808211BF52C004EBADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EAC780D211BF52C004EBADA /* Viper Todo ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viper Todo ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EAC7811211BF52C004EBADA /* Viper_Todo_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_Todo_ListTests.swift; sourceTree = "<group>"; };
+		8EAC7813211BF52C004EBADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EAC781C211BF659004EBADA /* AppStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryBoard.swift; sourceTree = "<group>"; };
+		8EAC7820211BF757004EBADA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		8EAC7824211C093F004EBADA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8EAC7826211C0980004EBADA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8EAC7829211C1258004EBADA /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		8EAC782C211C14A7004EBADA /* AppDelegate+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Navigation.swift"; sourceTree = "<group>"; };
+		8EAC782F211C1669004EBADA /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		8EAC7831211C1961004EBADA /* AlertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		8EAC7833211C1CE2004EBADA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		94D2AAE880B6CB643F817CFF /* Pods_Viper_Todo_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Viper_Todo_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCC361021645557367B3245 /* Pods-Viper Todo List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper Todo List.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viper Todo List/Pods-Viper Todo List.release.xcconfig"; sourceTree = "<group>"; };
+		DABA3EC4076FE9A7040B2A9B /* Pods-Viper Todo ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper Todo ListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viper Todo ListTests/Pods-Viper Todo ListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0199D3C1EB796E70C6DBD1A /* Pods-Viper Todo ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viper Todo ListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viper Todo ListTests/Pods-Viper Todo ListTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EAC77F3211BF525004EBADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B74F4447DE6C91B6127343 /* Pods_Viper_Todo_List.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC780A211BF52C004EBADA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD5203F71B7E9E142F744B43 /* Pods_Viper_Todo_ListTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E58E77FE76D36953E7F818D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87FCFD2171234BF495F242F3 /* Pods-Viper Todo List.debug.xcconfig */,
+				BBCC361021645557367B3245 /* Pods-Viper Todo List.release.xcconfig */,
+				DABA3EC4076FE9A7040B2A9B /* Pods-Viper Todo ListTests.debug.xcconfig */,
+				E0199D3C1EB796E70C6DBD1A /* Pods-Viper Todo ListTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E05E8DD211D787F00CC4378 /* UISection */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC781F211BF744004EBADA /* Home */,
+				8EAC781E211BF72C004EBADA /* Main */,
+			);
+			path = UISection;
+			sourceTree = "<group>";
+		};
+		8E07F4E5211C2B0F00166EB3 /* Fruit */ = {
+			isa = PBXGroup;
+			children = (
+				8E07F4E8211C2B2E00166EB3 /* FruitProtocols.swift */,
+				8E07F4E6211C2B2E00166EB3 /* FruitInteractor.swift */,
+				8E07F4E7211C2B2E00166EB3 /* FruitPresenter.swift */,
+				8E07F4E9211C2B2E00166EB3 /* FruitRouter.swift */,
+				8E07F4EA211C2B2E00166EB3 /* FruitViewController.swift */,
+				8E07F4EB211C2B2E00166EB3 /* FruitViewController.xib */,
+			);
+			path = Fruit;
+			sourceTree = "<group>";
+		};
+		8E07F4F3211C2FA100166EB3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8E07F4F4211C301D00166EB3 /* Fruit.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8E07F4F6211C33C700166EB3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8E07F4F7211C33EE00166EB3 /* BaseProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8E460B78211D492000225C3E /* FruitList */ = {
+			isa = PBXGroup;
+			children = (
+				8E460B79211D5F3700225C3E /* FruitListInteractor.swift */,
+				8E460B7A211D5F3700225C3E /* FruitListPresenter.swift */,
+				8E460B7B211D5F3700225C3E /* FruitListProtocols.swift */,
+				8E460B7C211D5F3700225C3E /* FruitListRouter.swift */,
+				8E460B7D211D5F3700225C3E /* FruitListViewController.swift */,
+				8E460B7E211D5F3700225C3E /* FruitListViewController.xib */,
+				8E05E8DE211D78B300CC4378 /* FruitCell.swift */,
+				8E05E8DF211D78B300CC4378 /* FruitCell.xib */,
+			);
+			path = FruitList;
+			sourceTree = "<group>";
+		};
+		8EAC77ED211BF525004EBADA = {
+			isa = PBXGroup;
+			children = (
+				8EAC77F8211BF525004EBADA /* Viper Todo List */,
+				8EAC7810211BF52C004EBADA /* Viper Todo ListTests */,
+				8EAC77F7211BF525004EBADA /* Products */,
+				3E58E77FE76D36953E7F818D /* Pods */,
+				B7F973CE3D2AD4DB28E9E9A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8EAC77F7211BF525004EBADA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC77F6211BF525004EBADA /* Viper Todo List.app */,
+				8EAC780D211BF52C004EBADA /* Viper Todo ListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EAC77F8211BF525004EBADA /* Viper Todo List */ = {
+			isa = PBXGroup;
+			children = (
+				8E05E8DD211D787F00CC4378 /* UISection */,
+				8E07F4F6211C33C700166EB3 /* Base */,
+				8E07F4F3211C2FA100166EB3 /* Entity */,
+				8EAC782E211C1655004EBADA /* Utils */,
+				8EAC782B211C148D004EBADA /* Extension */,
+				8EAC7828211C124A004EBADA /* DataManager */,
+				8EAC77F9211BF525004EBADA /* AppDelegate.swift */,
+				8EAC7803211BF52C004EBADA /* Assets.xcassets */,
+				8EAC7805211BF52C004EBADA /* LaunchScreen.storyboard */,
+				8EAC7808211BF52C004EBADA /* Info.plist */,
+				8EAC7800211BF525004EBADA /* Viper_Todo_List.xcdatamodeld */,
+				8EAC781C211BF659004EBADA /* AppStoryBoard.swift */,
+			);
+			path = "Viper Todo List";
+			sourceTree = "<group>";
+		};
+		8EAC7810211BF52C004EBADA /* Viper Todo ListTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC7811211BF52C004EBADA /* Viper_Todo_ListTests.swift */,
+				8EAC7813211BF52C004EBADA /* Info.plist */,
+			);
+			path = "Viper Todo ListTests";
+			sourceTree = "<group>";
+		};
+		8EAC781E211BF72C004EBADA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC7823211C0927004EBADA /* Register */,
+				8EAC7822211C091E004EBADA /* Login */,
+				8EAC77FB211BF525004EBADA /* ViewController.swift */,
+				8EAC77FD211BF525004EBADA /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8EAC781F211BF744004EBADA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E460B78211D492000225C3E /* FruitList */,
+				8E07F4E5211C2B0F00166EB3 /* Fruit */,
+				8EAC7820211BF757004EBADA /* Home.storyboard */,
+				8EAC7833211C1CE2004EBADA /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8EAC7822211C091E004EBADA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC7824211C093F004EBADA /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8EAC7823211C0927004EBADA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC7826211C0980004EBADA /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		8EAC7828211C124A004EBADA /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC7829211C1258004EBADA /* CacheManager.swift */,
+				8E460B85211D669A00225C3E /* LocalDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		8EAC782B211C148D004EBADA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC782C211C14A7004EBADA /* AppDelegate+Navigation.swift */,
+				8E05E8E2211D797600CC4378 /* UIView+Inspectable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8EAC782E211C1655004EBADA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8EAC782F211C1669004EBADA /* Switcher.swift */,
+				8EAC7831211C1961004EBADA /* AlertUtil.swift */,
+				8E05E8DB211D749B00CC4378 /* HUDHelper.swift */,
+				8E05E8E4211D7E6E00CC4378 /* AFImageHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B7F973CE3D2AD4DB28E9E9A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94D2AAE880B6CB643F817CFF /* Pods_Viper_Todo_List.framework */,
+				1A9331D0FC00C42B287CC7B9 /* Pods_Viper_Todo_ListTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EAC77F5211BF525004EBADA /* Viper Todo List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EAC7816211BF52C004EBADA /* Build configuration list for PBXNativeTarget "Viper Todo List" */;
+			buildPhases = (
+				27D2D65EC105329040C54593 /* [CP] Check Pods Manifest.lock */,
+				8EAC77F2211BF525004EBADA /* Sources */,
+				8EAC77F3211BF525004EBADA /* Frameworks */,
+				8EAC77F4211BF525004EBADA /* Resources */,
+				547DB2FD69BDD4B9147CC2D4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viper Todo List";
+			productName = "Viper Todo List";
+			productReference = 8EAC77F6211BF525004EBADA /* Viper Todo List.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EAC780C211BF52C004EBADA /* Viper Todo ListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EAC7819211BF52C004EBADA /* Build configuration list for PBXNativeTarget "Viper Todo ListTests" */;
+			buildPhases = (
+				6730D103F3F408B4C6FC2AF8 /* [CP] Check Pods Manifest.lock */,
+				8EAC7809211BF52C004EBADA /* Sources */,
+				8EAC780A211BF52C004EBADA /* Frameworks */,
+				8EAC780B211BF52C004EBADA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EAC780F211BF52C004EBADA /* PBXTargetDependency */,
+			);
+			name = "Viper Todo ListTests";
+			productName = "Viper Todo ListTests";
+			productReference = 8EAC780D211BF52C004EBADA /* Viper Todo ListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EAC77EE211BF525004EBADA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = bism;
+				TargetAttributes = {
+					8EAC77F5211BF525004EBADA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8EAC780C211BF52C004EBADA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8EAC77F5211BF525004EBADA;
+					};
+				};
+			};
+			buildConfigurationList = 8EAC77F1211BF525004EBADA /* Build configuration list for PBXProject "Viper Todo List" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EAC77ED211BF525004EBADA;
+			productRefGroup = 8EAC77F7211BF525004EBADA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EAC77F5211BF525004EBADA /* Viper Todo List */,
+				8EAC780C211BF52C004EBADA /* Viper Todo ListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EAC77F4211BF525004EBADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAC7807211BF52C004EBADA /* LaunchScreen.storyboard in Resources */,
+				8EAC7804211BF52C004EBADA /* Assets.xcassets in Resources */,
+				8EAC77FF211BF525004EBADA /* Main.storyboard in Resources */,
+				8E460B84211D5F3700225C3E /* FruitListViewController.xib in Resources */,
+				8EAC7821211BF757004EBADA /* Home.storyboard in Resources */,
+				8E07F4F1211C2B2E00166EB3 /* FruitViewController.xib in Resources */,
+				8E05E8E1211D78B300CC4378 /* FruitCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC780B211BF52C004EBADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27D2D65EC105329040C54593 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper Todo List-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		547DB2FD69BDD4B9147CC2D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Viper Todo List/Pods-Viper Todo List-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viper Todo List/Pods-Viper Todo List-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6730D103F3F408B4C6FC2AF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Viper Todo ListTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EAC77F2211BF525004EBADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E460B81211D5F3700225C3E /* FruitListProtocols.swift in Sources */,
+				8E07F4F8211C33EE00166EB3 /* BaseProtocol.swift in Sources */,
+				8E460B80211D5F3700225C3E /* FruitListPresenter.swift in Sources */,
+				8E07F4EE211C2B2E00166EB3 /* FruitProtocols.swift in Sources */,
+				8EAC781D211BF659004EBADA /* AppStoryBoard.swift in Sources */,
+				8E460B82211D5F3700225C3E /* FruitListRouter.swift in Sources */,
+				8E460B83211D5F3700225C3E /* FruitListViewController.swift in Sources */,
+				8EAC77FC211BF525004EBADA /* ViewController.swift in Sources */,
+				8E07F4ED211C2B2E00166EB3 /* FruitPresenter.swift in Sources */,
+				8EAC7802211BF525004EBADA /* Viper_Todo_List.xcdatamodeld in Sources */,
+				8EAC7827211C0980004EBADA /* RegisterViewController.swift in Sources */,
+				8E07F4F5211C301D00166EB3 /* Fruit.swift in Sources */,
+				8EAC7825211C093F004EBADA /* LoginViewController.swift in Sources */,
+				8EAC7830211C1669004EBADA /* Switcher.swift in Sources */,
+				8E05E8DC211D749B00CC4378 /* HUDHelper.swift in Sources */,
+				8E460B7F211D5F3700225C3E /* FruitListInteractor.swift in Sources */,
+				8E05E8E3211D797600CC4378 /* UIView+Inspectable.swift in Sources */,
+				8EAC77FA211BF525004EBADA /* AppDelegate.swift in Sources */,
+				8EAC7834211C1CE2004EBADA /* HomeViewController.swift in Sources */,
+				8E460B86211D669A00225C3E /* LocalDataManager.swift in Sources */,
+				8E05E8E5211D7E6E00CC4378 /* AFImageHelper.swift in Sources */,
+				8EAC782D211C14A7004EBADA /* AppDelegate+Navigation.swift in Sources */,
+				8E05E8E0211D78B300CC4378 /* FruitCell.swift in Sources */,
+				8E07F4EC211C2B2E00166EB3 /* FruitInteractor.swift in Sources */,
+				8EAC7832211C1961004EBADA /* AlertUtil.swift in Sources */,
+				8E07F4F0211C2B2E00166EB3 /* FruitViewController.swift in Sources */,
+				8EAC782A211C1258004EBADA /* CacheManager.swift in Sources */,
+				8E07F4EF211C2B2E00166EB3 /* FruitRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAC7809211BF52C004EBADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAC7812211BF52C004EBADA /* Viper_Todo_ListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EAC780F211BF52C004EBADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EAC77F5211BF525004EBADA /* Viper Todo List */;
+			targetProxy = 8EAC780E211BF52C004EBADA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EAC77FD211BF525004EBADA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EAC77FE211BF525004EBADA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EAC7805211BF52C004EBADA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EAC7806211BF52C004EBADA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EAC7814211BF52C004EBADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EAC7815211BF52C004EBADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EAC7817211BF52C004EBADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87FCFD2171234BF495F242F3 /* Pods-Viper Todo List.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Viper Todo List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.excercise.Viper-Todo-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EAC7818211BF52C004EBADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBCC361021645557367B3245 /* Pods-Viper Todo List.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Viper Todo List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.excercise.Viper-Todo-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EAC781A211BF52C004EBADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DABA3EC4076FE9A7040B2A9B /* Pods-Viper Todo ListTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Viper Todo ListTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.excercise.Viper-Todo-ListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper Todo List.app/Viper Todo List";
+			};
+			name = Debug;
+		};
+		8EAC781B211BF52C004EBADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0199D3C1EB796E70C6DBD1A /* Pods-Viper Todo ListTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Viper Todo ListTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.excercise.Viper-Todo-ListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Viper Todo List.app/Viper Todo List";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EAC77F1211BF525004EBADA /* Build configuration list for PBXProject "Viper Todo List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAC7814211BF52C004EBADA /* Debug */,
+				8EAC7815211BF52C004EBADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EAC7816211BF52C004EBADA /* Build configuration list for PBXNativeTarget "Viper Todo List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAC7817211BF52C004EBADA /* Debug */,
+				8EAC7818211BF52C004EBADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EAC7819211BF52C004EBADA /* Build configuration list for PBXNativeTarget "Viper Todo ListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EAC781A211BF52C004EBADA /* Debug */,
+				8EAC781B211BF52C004EBADA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8EAC7800211BF525004EBADA /* Viper_Todo_List.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8EAC7801211BF525004EBADA /* Viper_Todo_List.xcdatamodel */,
+			);
+			currentVersion = 8EAC7801211BF525004EBADA /* Viper_Todo_List.xcdatamodel */;
+			path = Viper_Todo_List.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8EAC77EE211BF525004EBADA /* Project object */;
+}

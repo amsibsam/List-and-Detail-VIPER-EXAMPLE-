@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bnx-uJ-Pim">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="2gt-ab-6cC">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="jIM-jB-dgW" customClass="HomeViewController" customModule="Viper_Todo_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NX5-bV-WfR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7RB-Uh-XXi">
+                                <rect key="frame" x="163" y="350.5" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Dl2-YB-0JR"/>
+                                    <constraint firstAttribute="height" constant="30" id="p7f-pM-rrh"/>
+                                </constraints>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="doLogout:" destination="jIM-jB-dgW" eventType="touchUpInside" id="oVO-mU-iRJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFa-N0-hBO">
+                                <rect key="frame" x="151" y="400.5" width="73" height="30"/>
+                                <state key="normal" title="Go to Fruit"/>
+                                <connections>
+                                    <action selector="goToFruit:" destination="jIM-jB-dgW" eventType="touchUpInside" id="aQe-x0-OG3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZFa-N0-hBO" firstAttribute="centerX" secondItem="fac-X1-gq7" secondAttribute="centerX" id="LnY-tE-qCm"/>
+                            <constraint firstItem="ZFa-N0-hBO" firstAttribute="top" secondItem="7RB-Uh-XXi" secondAttribute="bottom" constant="20" id="P26-nh-nEO"/>
+                            <constraint firstItem="7RB-Uh-XXi" firstAttribute="centerY" secondItem="fac-X1-gq7" secondAttribute="centerY" id="ax5-Kf-ecC"/>
+                            <constraint firstItem="7RB-Uh-XXi" firstAttribute="centerX" secondItem="fac-X1-gq7" secondAttribute="centerX" id="jR6-mQ-3Vp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fac-X1-gq7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="32s-xl-zo1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B64-Sa-iX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="128.18590704647679"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Otk-sG-b4T">
+            <objects>
+                <navigationController storyboardIdentifier="HomeStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="bnx-uJ-Pim" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gDA-HZ-21x">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jIM-jB-dgW" kind="relationship" relationship="rootViewController" id="tit-cw-ih3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4s-tb-WBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+</document>

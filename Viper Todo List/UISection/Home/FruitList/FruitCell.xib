@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="FruitCell" customModule="Viper_Todo_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruit 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gd-Xy-V0y">
+                        <rect key="frame" x="87" y="11" width="207" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Q6e-0m-d3h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tU8-Db-sjY">
+                        <rect key="frame" x="8" y="11" width="69" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="6eQ-8H-BCt"/>
+                            <constraint firstAttribute="height" constant="68" id="T9R-VF-Y0n"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="34"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin B1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u99-vN-Vxy">
+                        <rect key="frame" x="87" y="40" width="207" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bma-RS-1lK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Gd-Xy-V0y" firstAttribute="leading" secondItem="tU8-Db-sjY" secondAttribute="trailing" constant="10" id="CzJ-DX-ysP"/>
+                    <constraint firstItem="tU8-Db-sjY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Ie0-j4-gMf"/>
+                    <constraint firstItem="3Gd-Xy-V0y" firstAttribute="top" secondItem="tU8-Db-sjY" secondAttribute="top" id="MxK-HH-IB6"/>
+                    <constraint firstItem="u99-vN-Vxy" firstAttribute="top" secondItem="3Gd-Xy-V0y" secondAttribute="bottom" constant="8" id="Qgc-A9-yh7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3Gd-Xy-V0y" secondAttribute="trailing" constant="10" id="Reg-Qv-rRS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="u99-vN-Vxy" secondAttribute="trailing" constant="10" id="kNT-dF-wAg"/>
+                    <constraint firstItem="u99-vN-Vxy" firstAttribute="leading" secondItem="tU8-Db-sjY" secondAttribute="trailing" constant="10" id="mH5-Wc-5oO"/>
+                    <constraint firstItem="tU8-Db-sjY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s5M-HT-j2i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ivFruitPict" destination="tU8-Db-sjY" id="f8X-cx-oOC"/>
+                <outlet property="lbFruitName" destination="3Gd-Xy-V0y" id="JT7-Zd-08c"/>
+                <outlet property="lbVitamin" destination="u99-vN-Vxy" id="he0-38-lAJ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="31"/>
+        </tableViewCell>
+    </objects>
+</document>
